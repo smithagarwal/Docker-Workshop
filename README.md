@@ -5,9 +5,9 @@
 Before you install Docker for the first time on a new host machine, you need to set up the Docker repository. Afterward, you can install and update Docker from the repository. 
 
 a.	Install packages to allow apt to use a repository over HTTPS: 
-'''
-sudo apt-get install apt-transport-https ca-certificates curl software-properties-common 
-'''
+
+> sudo apt-get install apt-transport-https ca-certificates curl software-properties-common 
+
 b.	Add Docker’s official GPG (GNU Privacy Guard) key2: 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - 
 
