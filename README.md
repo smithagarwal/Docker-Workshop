@@ -53,14 +53,17 @@ e.	docker-compose.yml (add your docker hub id)
 
 #### 4. Enable docker remote API:
 
-a.	Edit the file > /lib/systemd/system/docker.service 
-b.	Modify the line that starts with ExecStart to look like this ExecStart=/usr/bin/docker daemon -H fd:// -H tcp://0.0.0.0:4243 
-Where the addition is “-H tcp://0.0.0.0:4243”
+a.	Edit the file 
+> /lib/systemd/system/docker.service 
+b.	Modify the line that starts with ExecStart to look like this 
+> ExecStart=/usr/bin/docker daemon -H fd:// -H tcp://0.0.0.0:4243 
+
+> Where the addition is “-H tcp://0.0.0.0:4243”
 c.	Save the modified file 
 d.	Run systemctl daemon-reload 
 e.	Run sudo service docker restart 
 f.	Test that the Docker API is indeed accessible: 
-curl http://localhost:4243/version
+> curl http://localhost:4243/version
 
 #### 5. Enable port 4243 on your VM so that docker API can be accessed from outside network using your VM IP. 
 
@@ -78,11 +81,12 @@ d.	Tag the “image_name” image using the docker tag command and the image ID.
 
 e.	Run docker images again to verify that the “image_name” image has been tagged. The same image ID now exists in two different repositories. 
 f.	Before you can push the image to Docker Hub, you need to log in, using the docker login command. The command doesn’t take any parameters, but prompts you for the username and password, as below: 
+'''
 $ docker login 
 Username: ***** 
 Password: ***** 
 Login Succeeded
-
+'''
 g.	Push your tagged image to Docker Hub, using the docker push command. 
 $ docker push “your_account_id”/”your_application_image_name”
 
