@@ -35,19 +35,23 @@ h.	To install docker-compose run the following commands:
 
 # Steps to execute the exercise
 
-## 1	Complete the microservice product-description-service( to get product name and URL) and product-price-service(to get product price), based upon the product id passed as the query parameter. You need to complete the following files 
+#### 1	Complete the microservice product-description-service( to get product name and URL) and product-price-service(to get product price), based upon the product id passed as the query parameter. You need to complete the following files 
 
 a.	product-price-service/product_price.js 
+
 b.	server/services/product_price.js
+
 c.	product-descp-service/product_descp.js
+
 d.	server/services/product_descp.js
+
 e.	docker-compose.yml (add your docker hub id) 
 
-## 2	Install docker and docker compose on the VM. 
+#### 2	Install docker and docker compose on the VM. 
 
-## 3	After installation run this application on the VIM as explained above. Check all the services running using docker ps command and testing on the browser. 
+#### 3	After installation run this application on the VIM as explained above. Check all the services running using docker ps command and testing on the browser. 
 
-## 4	Enable docker remote API:
+#### 4	Enable docker remote API:
 
 a.	Edit the file > /lib/systemd/system/docker.service 
 b.	Modify the line that starts with ExecStart to look like this ExecStart=/usr/bin/docker daemon -H fd:// -H tcp://0.0.0.0:4243 
@@ -58,13 +62,13 @@ e.	Run sudo service docker restart
 f.	Test that the Docker API is indeed accessible: 
 curl http://localhost:4243/version
 
-## 5	Enable port 4243 on your VM so that docker API can be accessed from outside network using your VM IP. 
+#### 5	Enable port 4243 on your VM so that docker API can be accessed from outside network using your VM IP. 
 
-## 6	Run docker-compose up –build to build images, container and to run it
+#### 6	Run docker-compose up –build to build images, container and to run it
 
-## 7	If application stops, then use this command to run it again after the first build - docker-compose up
+#### 7	If application stops, then use this command to run it again after the first build - docker-compose up
 
-## 8	Push images to docker hub
+#### 8	Push images to docker hub
 
 a.	As you already have built the image and created the docker hub account, so now it’s the time to tag your image and push it to your docker hub account. Tags are used to identify different versions.
 b.	Open the terminal and run the $ docker images command. 
@@ -86,11 +90,11 @@ h.	Go back to the Docker Hub website to see the newly-pushed image in your accou
 
 # Want to learn more (optional):
 
-## 1. Delete your images “docker rmi “image ID”
+#### 1. Delete your images “docker rmi “image ID”
 
-## 2.  Pull the images from the docker hub. “docker pull hub_ID/image_name”. Now you don’t need dockerfile to create the image. As in previous step, you already created the images and pushed into the docker hub.
+#### 2.  Pull the images from the docker hub. “docker pull hub_ID/image_name”. Now you don’t need dockerfile to create the image. As in previous step, you already created the images and pushed into the docker hub.
 
-## 3. Now same images which you just pulled, can be used in order to run the microservice application. 
+#### 3. Now same images which you just pulled, can be used in order to run the microservice application. 
 
 
 # Testing the application
