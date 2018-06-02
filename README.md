@@ -108,6 +108,13 @@ h.	Go back to the Docker Hub website to see the newly-pushed image in your accou
 # Testing the application
 
 Run the api on the browser, the api format will look something like this (productid can be changed): 
+
 http://YOUR_VM_IP:8080/exercises/exercise3?name=CCS&productId=3 
-and the output will contain a below message with all the fields values set according to the product id. 
-{ "hello": "", "product_id": "", "productURL": "", "productPrice": "", "productName": "" };
+
+and the output will contain a below message with all the fields values set according to the product id.
+
+{ "hello": "",
+"product_id": "", 
+"productURL": "", 
+"productPrice": "", 
+"productName": "" };
