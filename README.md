@@ -77,8 +77,11 @@ f.	Test that the Docker API is indeed accessible:
 #### 8. Push images to docker hub
 
 a.	As you already have built the image and created the docker hub account, so now it’s the time to tag your image and push it to your docker hub account. Tags are used to identify different versions.
+
 b.	Open the terminal and run the $ docker images command. 
+
 c.	Find the image ID for the “image_name” image, in the third column. 
+
 d.	Tag the “image_name” image using the docker tag command and the image ID. The command you must type looks like this: 
         
 
