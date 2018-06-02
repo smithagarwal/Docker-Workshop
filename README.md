@@ -37,11 +37,11 @@ h.	To install docker-compose run the following commands:
 
 ## 1	Complete the microservice product-description-service( to get product name and URL) and product-price-service(to get product price), based upon the product id passed as the query parameter. You need to complete the following files 
 
-> a.	product-price-service/product_price.js 
-> b.	server/services/product_price.js
-> c.	product-descp-service/product_descp.js
-> d.	server/services/product_descp.js
-> e.	docker-compose.yml (add your docker hub id) 
+a.	product-price-service/product_price.js 
+b.	server/services/product_price.js
+c.	product-descp-service/product_descp.js
+d.	server/services/product_descp.js
+e.	docker-compose.yml (add your docker hub id) 
 
 ## 2	Install docker and docker compose on the VM. 
 
