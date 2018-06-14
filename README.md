@@ -35,7 +35,7 @@ h.	To install docker-compose run the following commands:
 
 ## 3.   In Mac
 
-Follow the instructions from this site https://docs.docker.com/docker-for-mac/install/
+Follow the instructions from this site https://docs.docker.com/toolbox/toolbox_install_mac/
 
 # Steps to execute the exercise
 
